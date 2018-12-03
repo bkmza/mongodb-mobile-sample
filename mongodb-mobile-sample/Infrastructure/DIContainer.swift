@@ -23,7 +23,7 @@ class DIContainer {
         container.register(MongoAdapterProtocol.self) { _ in MongoAdapter() }
         container.register(MongoStorageProtocol.self) { r -> MongoStorageProtocol in
             let adapter = r.resolve(MongoAdapterProtocol.self)!
-            return MongoStorageService(adapter: adapter)
+            return MongoStorageProvider(adapter: adapter)
         }
     }
 }

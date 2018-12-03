@@ -14,24 +14,28 @@ import MongoSwift
 protocol MongoStorageProtocol: StorageProtocol {
 }
 
-public class MongoStorageService: MongoStorageProtocol {
+public class MongoStorageProvider: MongoStorageProtocol {
     
-    var name: String?
+    var type: StorageType?
     var adapter: MongoAdapterProtocol
+    var database: MongoDatabase?
     
     init(adapter: MongoAdapterProtocol) {
-        self.name = "MongoDB"
+        self.type = .MongoDB
         self.adapter = adapter
+        do {
+            self.database = try adapter.localMongoClient?.db("mongo_db")
+        } catch {
+            print("")
+        }
     }
     
     func getCount() -> Int {
         var itemsCount = -1
         do {
-            let collection = try self.adapter.localMongoClient?.db("my_db").collection("my_collection")
+            let collection = try self.database?.collection("my_collection")
             itemsCount = try collection?.count() ?? -1;
-            print(itemsCount)
         } catch {
-            print(itemsCount)
         }
         return itemsCount
     }

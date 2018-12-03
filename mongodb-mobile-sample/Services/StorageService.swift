@@ -10,16 +10,17 @@ import Foundation
 
 class StorageService: StorageProtocol {
     
-    let name: String?
+    let type: StorageType?
     let storage: StorageProtocol
     
     init(storage: StorageProtocol) {
         self.storage = storage
-        self.name = storage.name
+        self.type = storage.type
     }
     
     func getCount() -> Int {
-        print("I'm playing with \(String(describing: self.name)).")
-        return self.storage.getCount()
+        let count = self.storage.getCount()
+        print("Count for \(String(describing: self.type)) is \(count).")
+        return count
     }
 }

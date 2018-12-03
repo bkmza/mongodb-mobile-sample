@@ -10,7 +10,7 @@ import Foundation
 
 protocol StorageProtocol {
     
-    var name: String? { get }
+    var type: StorageType? { get }
     
     func getCount() -> Int
 }
