@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71A93E143DCC3A25B9F977DE /* Pods_mongodb_mobile_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F1E05B02E2BE5DFA2724C4 /* Pods_mongodb_mobile_sampleTests.framework */; };
+		921CB43D21A83AE400E145F1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 921CB43C21A83AE400E145F1 /* Podfile */; };
+		92625BD321AEE97B002E2E4C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BD221AEE97B002E2E4C /* StorageService.swift */; };
+		92625BD521AEEB31002E2E4C /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BD421AEEB31002E2E4C /* StorageProtocol.swift */; };
+		92625BD721AEEBA4002E2E4C /* MongoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BD621AEEBA4002E2E4C /* MongoAdapter.swift */; };
+		92625BD821AFDC06002E2E4C /* MongoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BD621AEEBA4002E2E4C /* MongoAdapter.swift */; };
+		92625BDB21B00F32002E2E4C /* MongoStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BDA21B00F32002E2E4C /* MongoStorageService.swift */; };
 		927A9BDC21A8391C002A34ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A9BDB21A8391C002A34ED /* AppDelegate.swift */; };
 		927A9BDE21A8391C002A34ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A9BDD21A8391C002A34ED /* ViewController.swift */; };
 		927A9BE121A8391C002A34ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A9BDF21A8391C002A34ED /* Main.storyboard */; };
 		927A9BE321A8391E002A34ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927A9BE221A8391E002A34ED /* Assets.xcassets */; };
 		927A9BE621A8391E002A34ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A9BE421A8391E002A34ED /* LaunchScreen.storyboard */; };
 		927A9BF121A8391E002A34ED /* mongodb_mobile_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A9BF021A8391E002A34ED /* mongodb_mobile_sampleTests.swift */; };
+		92DEE95721B01F6F00163B2E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEE95621B01F6F00163B2E /* DIContainer.swift */; };
+		BB8BEC1608F972B9B5F5CCA5 /* Pods_mongodb_mobile_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56662A67304A3D0686F9D36C /* Pods_mongodb_mobile_sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F1E05B02E2BE5DFA2724C4 /* Pods_mongodb_mobile_sampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mongodb_mobile_sampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E8366A90A7B896658AAEED /* Pods-mongodb-mobile-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sampleTests/Pods-mongodb-mobile-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56662A67304A3D0686F9D36C /* Pods_mongodb_mobile_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mongodb_mobile_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6000D20BA773E02C61B894BB /* Pods-mongodb-mobile-sampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sampleTests/Pods-mongodb-mobile-sampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		921CB43C21A83AE400E145F1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92625BD221AEE97B002E2E4C /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		92625BD421AEEB31002E2E4C /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		92625BD621AEEBA4002E2E4C /* MongoAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoAdapter.swift; sourceTree = "<group>"; };
+		92625BDA21B00F32002E2E4C /* MongoStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoStorageService.swift; sourceTree = "<group>"; };
 		927A9BD821A8391C002A34ED /* mongodb-mobile-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mongodb-mobile-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927A9BDB21A8391C002A34ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		927A9BDD21A8391C002A34ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +54,9 @@
 		927A9BEC21A8391E002A34ED /* mongodb-mobile-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mongodb-mobile-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927A9BF021A8391E002A34ED /* mongodb_mobile_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mongodb_mobile_sampleTests.swift; sourceTree = "<group>"; };
 		927A9BF221A8391E002A34ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DEE95621B01F6F00163B2E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		AED627C473A0438A6180C9D4 /* Pods-mongodb-mobile-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample.release.xcconfig"; sourceTree = "<group>"; };
+		E75126AECAB87B72272943DE /* Pods-mongodb-mobile-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8BEC1608F972B9B5F5CCA5 /* Pods_mongodb_mobile_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +72,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A93E143DCC3A25B9F977DE /* Pods_mongodb_mobile_sampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32145ADCF68489A7C34BB1FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E75126AECAB87B72272943DE /* Pods-mongodb-mobile-sample.debug.xcconfig */,
+				AED627C473A0438A6180C9D4 /* Pods-mongodb-mobile-sample.release.xcconfig */,
+				41E8366A90A7B896658AAEED /* Pods-mongodb-mobile-sampleTests.debug.xcconfig */,
+				6000D20BA773E02C61B894BB /* Pods-mongodb-mobile-sampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		850C8FBF749ED98797F7A606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56662A67304A3D0686F9D36C /* Pods_mongodb_mobile_sample.framework */,
+				22F1E05B02E2BE5DFA2724C4 /* Pods_mongodb_mobile_sampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92625BDC21B0107A002E2E4C /* Mongo */ = {
+			isa = PBXGroup;
+			children = (
+				92625BD621AEEBA4002E2E4C /* MongoAdapter.swift */,
+				92625BDA21B00F32002E2E4C /* MongoStorageService.swift */,
+			);
+			path = Mongo;
+			sourceTree = "<group>";
+		};
 		927A9BCF21A8391C002A34ED = {
 			isa = PBXGroup;
 			children = (
+				921CB43C21A83AE400E145F1 /* Podfile */,
 				927A9BDA21A8391C002A34ED /* mongodb-mobile-sample */,
 				927A9BEF21A8391E002A34ED /* mongodb-mobile-sampleTests */,
 				927A9BD921A8391C002A34ED /* Products */,
+				32145ADCF68489A7C34BB1FE /* Pods */,
+				850C8FBF749ED98797F7A606 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +132,8 @@
 		927A9BDA21A8391C002A34ED /* mongodb-mobile-sample */ = {
 			isa = PBXGroup;
 			children = (
+				92DEE95521B01F4F00163B2E /* Infrastructure */,
+				9289881821A846150015E471 /* Services */,
 				927A9BDB21A8391C002A34ED /* AppDelegate.swift */,
 				927A9BDD21A8391C002A34ED /* ViewController.swift */,
 				927A9BDF21A8391C002A34ED /* Main.storyboard */,
@@ -96,6 +153,24 @@
 			path = "mongodb-mobile-sampleTests";
 			sourceTree = "<group>";
 		};
+		9289881821A846150015E471 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92625BD221AEE97B002E2E4C /* StorageService.swift */,
+				92625BD421AEEB31002E2E4C /* StorageProtocol.swift */,
+				92625BDC21B0107A002E2E4C /* Mongo */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92DEE95521B01F4F00163B2E /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				92DEE95621B01F6F00163B2E /* DIContainer.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 927A9BF521A8391E002A34ED /* Build configuration list for PBXNativeTarget "mongodb-mobile-sample" */;
 			buildPhases = (
+				E2F914637EA0A2FEEF4290AA /* [CP] Check Pods Manifest.lock */,
 				927A9BD421A8391C002A34ED /* Sources */,
 				927A9BD521A8391C002A34ED /* Frameworks */,
 				927A9BD621A8391C002A34ED /* Resources */,
+				E35DA4E5976A4357C2B42898 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 927A9BF821A8391E002A34ED /* Build configuration list for PBXNativeTarget "mongodb-mobile-sampleTests" */;
 			buildPhases = (
+				F0B153DA5149C337E6F4DE84 /* [CP] Check Pods Manifest.lock */,
 				927A9BE821A8391E002A34ED /* Sources */,
 				927A9BE921A8391E002A34ED /* Frameworks */,
 				927A9BEA21A8391E002A34ED /* Resources */,
@@ -179,6 +257,7 @@
 			files = (
 				927A9BE621A8391E002A34ED /* LaunchScreen.storyboard in Resources */,
 				927A9BE321A8391E002A34ED /* Assets.xcassets in Resources */,
+				921CB43D21A83AE400E145F1 /* Podfile in Resources */,
 				927A9BE121A8391C002A34ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +271,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2F914637EA0A2FEEF4290AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mongodb-mobile-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E35DA4E5976A4357C2B42898 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MongoMobile/MongoMobile.framework",
+				"${BUILT_PRODUCTS_DIR}/MongoSwift/MongoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCoreLocalMongoDBService/StitchCoreLocalMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchLocalMongoDBService/StitchLocalMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework",
+				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework.dSYM",
+				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework",
+				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/mongoc.framework.dSYM",
+				"${PODS_ROOT}/mongo_embedded/iPhoneOS/Frameworks/mongo_embedded.framework",
+				"${PODS_ROOT}/mongo_embedded/iPhoneOS/Frameworks/mongo_embedded.framework.dSYM",
+				"${PODS_ROOT}/mongoc_embedded/iPhoneOS/Frameworks/mongoc_embedded.framework",
+				"${PODS_ROOT}/mongoc_embedded/iPhoneOS/Frameworks/mongoc_embedded.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoMobile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreLocalMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreRemoteMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchLocalMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchRemoteMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bson.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/bson.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mongoc.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/mongoc.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mongo_embedded.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/mongo_embedded.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mongoc_embedded.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/mongoc_embedded.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B153DA5149C337E6F4DE84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mongodb-mobile-sampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		927A9BD421A8391C002A34ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DEE95721B01F6F00163B2E /* DIContainer.swift in Sources */,
 				927A9BDE21A8391C002A34ED /* ViewController.swift in Sources */,
 				927A9BDC21A8391C002A34ED /* AppDelegate.swift in Sources */,
+				92625BDB21B00F32002E2E4C /* MongoStorageService.swift in Sources */,
+				92625BD721AEEBA4002E2E4C /* MongoAdapter.swift in Sources */,
+				92625BD521AEEB31002E2E4C /* StorageProtocol.swift in Sources */,
+				92625BD321AEE97B002E2E4C /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92625BD821AFDC06002E2E4C /* MongoAdapter.swift in Sources */,
 				927A9BF121A8391E002A34ED /* mongodb_mobile_sampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +532,7 @@
 		};
 		927A9BF621A8391E002A34ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75126AECAB87B72272943DE /* Pods-mongodb-mobile-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +551,7 @@
 		};
 		927A9BF721A8391E002A34ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED627C473A0438A6180C9D4 /* Pods-mongodb-mobile-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +570,7 @@
 		};
 		927A9BF921A8391E002A34ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E8366A90A7B896658AAEED /* Pods-mongodb-mobile-sampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +592,7 @@
 		};
 		927A9BFA21A8391E002A34ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6000D20BA773E02C61B894BB /* Pods-mongodb-mobile-sampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

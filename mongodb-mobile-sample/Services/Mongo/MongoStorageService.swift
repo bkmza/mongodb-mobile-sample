@@ -11,14 +11,17 @@ import StitchCore
 import StitchLocalMongoDBService
 import MongoSwift
 
-public class MongoStorageService: StorageProtocol {
+protocol MongoStorageProtocol: StorageProtocol {
+}
+
+public class MongoStorageService: MongoStorageProtocol {
     
     var name: String?
-    var adapter: MongoAdapter
+    var adapter: MongoAdapterProtocol
     
-    init() {
+    init(adapter: MongoAdapterProtocol) {
         self.name = "MongoDB"
-        self.adapter = MongoAdapter()
+        self.adapter = adapter
     }
     
     func getCount() -> Int {

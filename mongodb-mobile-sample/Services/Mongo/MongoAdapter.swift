@@ -11,7 +11,11 @@ import StitchCore
 import StitchLocalMongoDBService
 import MongoSwift
 
-public class MongoAdapter {
+protocol MongoAdapterProtocol {
+    var localMongoClient: MongoClient? { get }
+}
+
+public class MongoAdapter: MongoAdapterProtocol {
     
     var stichAppClient: StitchAppClient?
     public var localMongoClient: MongoClient?

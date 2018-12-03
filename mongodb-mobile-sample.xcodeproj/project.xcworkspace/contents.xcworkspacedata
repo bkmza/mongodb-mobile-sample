@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ilyausikov/Projects/_personal/mongodb-mobile-sample/Podfile">
+   </FileRef>
+   <FileRef
       location = "self:mongodb-mobile-sample.xcodeproj">
    </FileRef>
 </Workspace>

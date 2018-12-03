@@ -8,17 +8,18 @@
 
 import Foundation
 
-class BaseStorageService: BaseStorageProtocol {
+class StorageService: StorageProtocol {
     
+    let name: String?
     let storage: StorageProtocol
     
     init(storage: StorageProtocol) {
         self.storage = storage
+        self.name = storage.name
     }
     
     func getCount() -> Int {
-        let adapter = self.storage.persistanceAdapter ?? "default"
-        print("I'm playing with \(adapter).")
+        print("I'm playing with \(String(describing: self.name)).")
         return self.storage.getCount()
     }
 }

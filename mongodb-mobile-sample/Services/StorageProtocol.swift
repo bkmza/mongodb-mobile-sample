@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol MongoPersistanceProtocol {
+protocol StorageProtocol {
+    
+    var name: String? { get }
+    
     func getCount() -> Int
 }

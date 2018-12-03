@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Swinject
+
+class DIContainer {
+    
+    static let shared: DIContainer = {
+        let diContainer = DIContainer()
+        return diContainer
+    }()
+    
+    let container: Container
+    
+    private init() {
+        container = Container()
+        container.register(MongoAdapterProtocol.self) { _ in MongoAdapter() }
+        container.register(MongoStorageProtocol.self) { r -> MongoStorageProtocol in
+            let adapter = r.resolve(MongoAdapterProtocol.self)!
+            return MongoStorageService(adapter: adapter)
+        }
+    }
+}
