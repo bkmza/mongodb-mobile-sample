@@ -20,7 +20,7 @@ class StorageService: StorageProtocol {
     
     func getCount() -> Int {
         let count = self.storage.getCount()
-        print("Count for \(String(describing: self.type)) is \(count).")
+        Logger.shared.log.info(("StorageService.getCount called for \(self.type!.rawValue) adapter. Value is \(count)."))
         return count
     }
 }

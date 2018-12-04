@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "128E66CB1869615357E0E1AD9A95B142"
-               BlueprintName = "StitchRemoteMongoDBService"
+               BlueprintIdentifier = "F91D4F093A0888E9C7DF60C5F2D3F329"
+               BlueprintName = "SwiftyBeaver"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "StitchRemoteMongoDBService.framework">
+               BuildableName = "SwiftyBeaver.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

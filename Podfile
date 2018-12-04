@@ -10,6 +10,7 @@ target 'mongodb-mobile-sample' do
     pod 'StitchSDK', '~> 4.1.0'
     pod 'StitchLocalMongoDBService', '~> 4.1.0'
     pod 'Swinject'
+    pod 'SwiftyBeaver'
 
   target 'mongodb-mobile-sampleTests' do
     inherit! :search_paths

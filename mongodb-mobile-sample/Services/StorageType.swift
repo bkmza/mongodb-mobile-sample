@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum StorageType {
-    case Sqlite
-    case MongoDB
-    case Realm
+enum StorageType: String {
+    case Sqlite = "sqlite"
+    case MongoDB = "MongoDB Mobile"
+    case Realm = "Realm"
 }

@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         
         let storageService = StorageService(storage: DIContainer.shared.container.resolve(MongoStorageProtocol.self)!)
         print(storageService.getCount())
-        //        let storageService = StorageService(storage: mongoStorageService)
-//        print(storageService.name)
-//        print(storageService.getCount())
     }
 }
 

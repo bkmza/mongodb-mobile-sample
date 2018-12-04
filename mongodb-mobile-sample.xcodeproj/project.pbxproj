@@ -21,6 +21,7 @@
 		927A9BE621A8391E002A34ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A9BE421A8391E002A34ED /* LaunchScreen.storyboard */; };
 		927A9BF121A8391E002A34ED /* mongodb_mobile_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A9BF021A8391E002A34ED /* mongodb_mobile_sampleTests.swift */; };
 		92A4FE7321B572F00079051D /* StorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4FE7221B572F00079051D /* StorageType.swift */; };
+		92D58C6421B678E400452DE5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D58C6321B678E400452DE5 /* Logger.swift */; };
 		92DEE95721B01F6F00163B2E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEE95621B01F6F00163B2E /* DIContainer.swift */; };
 		BB8BEC1608F972B9B5F5CCA5 /* Pods_mongodb_mobile_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56662A67304A3D0686F9D36C /* Pods_mongodb_mobile_sample.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		927A9BF021A8391E002A34ED /* mongodb_mobile_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mongodb_mobile_sampleTests.swift; sourceTree = "<group>"; };
 		927A9BF221A8391E002A34ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92A4FE7221B572F00079051D /* StorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageType.swift; sourceTree = "<group>"; };
+		92D58C6321B678E400452DE5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		92DEE95621B01F6F00163B2E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		AED627C473A0438A6180C9D4 /* Pods-mongodb-mobile-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample.release.xcconfig"; sourceTree = "<group>"; };
 		E75126AECAB87B72272943DE /* Pods-mongodb-mobile-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				92DEE95621B01F6F00163B2E /* DIContainer.swift */,
+				92D58C6321B678E400452DE5 /* Logger.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				"${BUILT_PRODUCTS_DIR}/StitchCoreSDK/StitchCoreSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchLocalMongoDBService/StitchLocalMongoDBService.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchRemoteMongoDBService/StitchRemoteMongoDBService.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework",
 				"${PODS_ROOT}/mongo-embedded-c-driver/iPhoneOS/Frameworks/bson.framework.dSYM",
@@ -328,6 +332,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCoreSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchLocalMongoDBService.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchRemoteMongoDBService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bson.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/bson.framework.dSYM",
@@ -372,6 +377,7 @@
 				927A9BDE21A8391C002A34ED /* ViewController.swift in Sources */,
 				927A9BDC21A8391C002A34ED /* AppDelegate.swift in Sources */,
 				92A4FE7321B572F00079051D /* StorageType.swift in Sources */,
+				92D58C6421B678E400452DE5 /* Logger.swift in Sources */,
 				92625BDB21B00F32002E2E4C /* MongoStorageProvider.swift in Sources */,
 				92625BD721AEEBA4002E2E4C /* MongoAdapter.swift in Sources */,
 				92625BD521AEEB31002E2E4C /* StorageProtocol.swift in Sources */,
