@@ -13,26 +13,18 @@ protocol SQLStorageProviderProtocol: StorageProtocol {
 }
 
 public class SQLStorageProvider: SQLStorageProviderProtocol {
-    let dbQueue: DatabaseQueue
+    private var dbQueue: DatabaseQueue!
     var type: StorageType?
     
     init() {
         type = .Sqlite
-        let fileManager = FileManager.default
-        let databasePath =  try! fileManager
+        
+        let databaseURL = try! FileManager.default
             .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             .appendingPathComponent("GRDBdatabase.sqlite")
-            .path
-        
-        if !fileManager.fileExists(atPath: databasePath) {
-            let dbResourcePath = Bundle.main.path(forResource: "GRDBdatabase", ofType: "sqlite")!
-            try! fileManager.copyItem(atPath: dbResourcePath, toPath: databasePath)
-        }
-        
-        dbQueue = try! DatabaseQueue(path: databasePath)
-        
 
         do {
+            dbQueue = try DatabaseQueue(path: databaseURL.path)
             try SQLStorageProvider.migrator.migrate(dbQueue)
             
         } catch {
@@ -57,7 +49,7 @@ public class SQLStorageProvider: SQLStorageProviderProtocol {
 
 extension SQLStorageProvider{
     
-    static var migrator: DatabaseMigrator {
+    private static var migrator: DatabaseMigrator {
         var migrator = DatabaseMigrator()
         
         // Create a table "PostSQL"
