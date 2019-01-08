@@ -12,6 +12,7 @@ target 'mongodb-mobile-sample' do
     pod 'Swinject'
     pod 'SwiftyBeaver'
     pod 'GRDB.swift'
+    pod 'RealmSwift'
 
   target 'mongodb-mobile-sampleTests' do
     inherit! :search_paths

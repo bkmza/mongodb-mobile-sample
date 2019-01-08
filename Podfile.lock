@@ -1,5 +1,5 @@
 PODS:
-  - GRDB.swift (3.6.1)
+  - GRDB.swift (3.6.2)
   - mongo-embedded-c-driver (1.13.0-4.0.4)
   - mongo_embedded (4.0.4)
   - mongoc_embedded (4.0.4):
@@ -11,6 +11,11 @@ PODS:
     - MongoSwift (~> 0.0.7)
   - MongoSwift (0.0.7):
     - mongo-embedded-c-driver (~> 1.13.0-4.0.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - StitchCore (4.1.1):
     - StitchCoreSDK (= 4.1.1)
   - StitchCoreLocalMongoDBService (4.1.1):
@@ -37,6 +42,7 @@ PODS:
 
 DEPENDENCIES:
   - GRDB.swift
+  - RealmSwift
   - StitchLocalMongoDBService (~> 4.1.0)
   - StitchSDK (~> 4.1.0)
   - SwiftyBeaver
@@ -50,6 +56,8 @@ SPEC REPOS:
     - mongoc_embedded
     - MongoMobile
     - MongoSwift
+    - Realm
+    - RealmSwift
     - StitchCore
     - StitchCoreLocalMongoDBService
     - StitchCoreRemoteMongoDBService
@@ -61,12 +69,14 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  GRDB.swift: 2ea998984ce0d8b869917e1452b5d87f1ec5e0dd
+  GRDB.swift: e10787d857b6b8135354b9e08fb23b4bb8e2fab7
   mongo-embedded-c-driver: b46360baa15fc142baae80628822f26663220bde
   mongo_embedded: e413134eb6b60544e7278add03007f8fe384a00c
   mongoc_embedded: 41aadbb756b07070d6f0471192a84750cb42c580
   MongoMobile: 2fc916b194dc19b9a6b8d948d42441b0b37812e7
   MongoSwift: de22baca5a59aef44de44e07ee9adb8c4f59c5ee
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   StitchCore: 341cdc409c52babb505f152a01232ba60cbdee55
   StitchCoreLocalMongoDBService: a76bd6d3fb845158b95e896f638e908dcd65b514
   StitchCoreRemoteMongoDBService: 1eacc874bbc227466951b0eedb44e872efd0459f
@@ -77,6 +87,6 @@ SPEC CHECKSUMS:
   SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: e6666824375099b6647051160cd40b454a852db6
+PODFILE CHECKSUM: 3efde324491fa4e15e8093975532b4a5a4f807c6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2
