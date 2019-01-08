@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A8312BF21E4AAE60099B782 /* SQLStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8312BE21E4AAE60099B782 /* SQLStorageProvider.swift */; };
+		4A8312C221E4AC2F0099B782 /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8312C121E4AC2F0099B782 /* PostProtocol.swift */; };
+		4A8312C521E4AC8B0099B782 /* PostSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8312C421E4AC8B0099B782 /* PostSQL.swift */; };
 		71A93E143DCC3A25B9F977DE /* Pods_mongodb_mobile_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F1E05B02E2BE5DFA2724C4 /* Pods_mongodb_mobile_sampleTests.framework */; };
 		921CB43D21A83AE400E145F1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 921CB43C21A83AE400E145F1 /* Podfile */; };
 		92625BD321AEE97B002E2E4C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625BD221AEE97B002E2E4C /* StorageService.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		22F1E05B02E2BE5DFA2724C4 /* Pods_mongodb_mobile_sampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mongodb_mobile_sampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E8366A90A7B896658AAEED /* Pods-mongodb-mobile-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sampleTests/Pods-mongodb-mobile-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A8312BE21E4AAE60099B782 /* SQLStorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLStorageProvider.swift; sourceTree = "<group>"; };
+		4A8312C121E4AC2F0099B782 /* PostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocol.swift; sourceTree = "<group>"; };
+		4A8312C421E4AC8B0099B782 /* PostSQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSQL.swift; sourceTree = "<group>"; };
 		56662A67304A3D0686F9D36C /* Pods_mongodb_mobile_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mongodb_mobile_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6000D20BA773E02C61B894BB /* Pods-mongodb-mobile-sampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mongodb-mobile-sampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mongodb-mobile-sampleTests/Pods-mongodb-mobile-sampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		921CB43C21A83AE400E145F1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -94,6 +100,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A8312BD21E4AAAC0099B782 /* SQL_GRDB */ = {
+			isa = PBXGroup;
+			children = (
+				4A8312C321E4AC740099B782 /* Models */,
+				4A8312BE21E4AAE60099B782 /* SQLStorageProvider.swift */,
+			);
+			path = SQL_GRDB;
+			sourceTree = "<group>";
+		};
+		4A8312C021E4AC150099B782 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A8312C121E4AC2F0099B782 /* PostProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A8312C321E4AC740099B782 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A8312C421E4AC8B0099B782 /* PostSQL.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		850C8FBF749ED98797F7A606 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +167,7 @@
 		927A9BDA21A8391C002A34ED /* mongodb-mobile-sample */ = {
 			isa = PBXGroup;
 			children = (
+				4A8312C021E4AC150099B782 /* Models */,
 				92DEE95521B01F4F00163B2E /* Infrastructure */,
 				9289881821A846150015E471 /* Services */,
 				927A9BDB21A8391C002A34ED /* AppDelegate.swift */,
@@ -164,6 +196,7 @@
 				92625BD221AEE97B002E2E4C /* StorageService.swift */,
 				92A4FE7221B572F00079051D /* StorageType.swift */,
 				92625BDC21B0107A002E2E4C /* Mongo */,
+				4A8312BD21E4AAAC0099B782 /* SQL_GRDB */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,6 +336,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mongodb-mobile-sample/Pods-mongodb-mobile-sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MongoMobile/MongoMobile.framework",
 				"${BUILT_PRODUCTS_DIR}/MongoSwift/MongoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/StitchCore/StitchCore.framework",
@@ -324,6 +358,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoMobile.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MongoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StitchCore.framework",
@@ -375,7 +410,10 @@
 			files = (
 				92DEE95721B01F6F00163B2E /* DIContainer.swift in Sources */,
 				927A9BDE21A8391C002A34ED /* ViewController.swift in Sources */,
+				4A8312C521E4AC8B0099B782 /* PostSQL.swift in Sources */,
 				927A9BDC21A8391C002A34ED /* AppDelegate.swift in Sources */,
+				4A8312BF21E4AAE60099B782 /* SQLStorageProvider.swift in Sources */,
+				4A8312C221E4AC2F0099B782 /* PostProtocol.swift in Sources */,
 				92A4FE7321B572F00079051D /* StorageType.swift in Sources */,
 				92D58C6421B678E400452DE5 /* Logger.swift in Sources */,
 				92625BDB21B00F32002E2E4C /* MongoStorageProvider.swift in Sources */,

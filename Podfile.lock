@@ -1,4 +1,5 @@
 PODS:
+  - GRDB.swift (3.6.1)
   - mongo-embedded-c-driver (1.13.0-4.0.4)
   - mongo_embedded (4.0.4)
   - mongoc_embedded (4.0.4):
@@ -35,6 +36,7 @@ PODS:
   - Swinject (2.5.0)
 
 DEPENDENCIES:
+  - GRDB.swift
   - StitchLocalMongoDBService (~> 4.1.0)
   - StitchSDK (~> 4.1.0)
   - SwiftyBeaver
@@ -42,6 +44,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - GRDB.swift
     - mongo-embedded-c-driver
     - mongo_embedded
     - mongoc_embedded
@@ -58,6 +61,7 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
+  GRDB.swift: 2ea998984ce0d8b869917e1452b5d87f1ec5e0dd
   mongo-embedded-c-driver: b46360baa15fc142baae80628822f26663220bde
   mongo_embedded: e413134eb6b60544e7278add03007f8fe384a00c
   mongoc_embedded: 41aadbb756b07070d6f0471192a84750cb42c580
@@ -73,6 +77,6 @@ SPEC CHECKSUMS:
   SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 780d87d0db17a0357ce3fdcffd23c269e16a955a
+PODFILE CHECKSUM: e6666824375099b6647051160cd40b454a852db6
 
 COCOAPODS: 1.5.3

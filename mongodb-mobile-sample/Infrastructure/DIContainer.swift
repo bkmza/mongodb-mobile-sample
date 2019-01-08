@@ -25,5 +25,7 @@ class DIContainer {
             let adapter = r.resolve(MongoAdapterProtocol.self)!
             return MongoStorageProvider(adapter: adapter)
         }
+        
+        container.register(SQLStorageProviderProtocol.self) { _ in SQLStorageProvider() }
     }
 }
